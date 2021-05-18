@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name,age,food){
+                this.name = name
+                this.age = Number (age)
+                this.food = food
+             }
+             sound(){ 
+                 console.log(this.name+"likes"+this.food)
+             }
+        }
+            class human extends person{
+                exer(){
+                    console.log(this.name+"likes many of them"+this.food)
+                }
+            }
+            const output = new human("yasar",32,"egg") 
+            output.exer()
+            
+            </script>
+</body>
+</html>

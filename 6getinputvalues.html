@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Getting Input values</h2>
+    <input type="text" class="in">
+    <h1>HI this is <span id="sp"></span></h1>
+    <script>
+        var getinput = document.querySelector(".in")
+        var spanoutput = document.getElementById("sp")
+        function call(event){
+            spanoutput.innerHTML=event.target.value
+        }
+        getinput.addEventListener('keydown', call)
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .model{
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            border: 1px solid black;
+            background-color: wheat;
+            box-shadow: 5px 5px black;
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="model">
+<h1>Welcome to our model</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Modi quia, explicabo consequuntur ipsam esse suscipit non debitis 
+    magnam facere dolores corporis! Aliquam illo blanditiis debitis eius
+     non soluta minus nemo molestias voluptate eveniet architecto, eligendi
+      consectetur harum, aliquid, nesciunt omnis quisquam porro laborum
+       accusantium magni velit dolorum modi? Debitis, inventore?</p>
+<p><button class="close">close</button></p>
+    </div>
+    <button class="open">open</button>
+    <script>
+     class modal{
+            constructor(){
+                this.third = document.querySelector(".model")
+            }
+            open(){
+                this.third.style.display ='initial'
+         }
+            close(){
+                this.third.style.display ="none"
+            }
+        }
+        var newone = document.querySelector(".open")
+        var secone = document.querySelector(".close")
+        const model = new modal
+        newone.addEventListener('click', function(event){
+            model.open()
+        })
+        secone.addEventListener('click',function(event){
+           model.close() 
+        }) 
+</script>
+</body>
+</html>

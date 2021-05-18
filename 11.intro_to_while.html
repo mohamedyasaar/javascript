@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Intro To While Loop</h1>
+    <h2>List</h2>
+    <ul class="input"></ul>
+    <script>
+        var inp = document.querySelector(".input")
+        var out = ''
+        var num = Number (prompt("enter ur no"))
+        startingnum = 0
+        while(startingnum < num){
+            var out = out+"<li>NO:"+startingnum+"</li>"
+            startingnum++
+        }
+        inp.innerHTML =  out
+    </script>
+</body>
+</html>

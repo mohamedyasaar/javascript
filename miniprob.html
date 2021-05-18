@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="link"> </P>
+    <script>
+        var  name = prompt("Enter ur url");
+        if(name == "null")
+        {
+         alert("get out idiot");
+        } else {
+            if (name.substr(0.4) != "http"){
+                name = "http//:"+name
+            }
+        
+             var sr = document.getElementById("link")  
+             var rss ="<a href='"+name+ "'>"+name+"</a>";
+             sr.innerHTML= rss
+        }
+    </script>
+</body>
+</html>

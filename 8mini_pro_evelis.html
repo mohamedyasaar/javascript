@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mini project for event listeners</h1>
+    <div>
+        <label>backgroundColor:</label>
+        <input type="text" class="bgin" style='padding:10px;'>
+    </div>
+    <div>
+        <label>Textcolor:</label>
+        <input type="text" class="tcin" style='padding:10px;'>
+    </div>
+    <div>
+        <label>Textfont:</label>
+        <input type="text" class="tfin" style='padding:10px;'>
+    </div>
+    <script>
+        var bg = document.querySelector(".bgin")
+        var tc = document.querySelector(".tcin")
+        var tf = document.querySelector(".tfin")
+        var body = document.querySelector("body")
+
+        bg.addEventListener('keyup',function(event){
+            body.style.backgroundColor = event.target.value
+        })
+        
+        tc.addEventListener('keyup',function(event){
+            body.style.color= event.target.value
+        })
+        
+        tf.addEventListener('keyup',function(event){
+            body.style.fontSize = event.target.value+'px'
+        })
+
+    </script>
+    
+</body>
+</html>
